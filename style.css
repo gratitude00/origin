@@ -1,0 +1,245 @@
+		* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'IBM Plex Sans KR', sans-serif;}
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background-color:black;
+			background-size: cover;
+			overflow: auto;
+		}
+		.form {position: relative; z-index: 2;}
+		.int-area {
+			width: 400px; position: relative;
+			margin-top: 20px;
+		}
+
+		.int-area input {
+			width: 100%;
+			padding: 20px 10px 10px;
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid #555;
+			font-size: 18px; color: #fff;
+			outline: none;
+		}
+		.int-area label {
+			position: absolute; left: 10px; top: 15px;
+			font-size: 18px; color: #555;
+			transition: all .5s ease;
+		}
+		.int-area input:focus+label,
+		.int-area input:valid+label {
+			top: -2px;
+			font-size: 13px; color: #2e3949;
+		}
+		.btn-area button{
+			width: 200px; height: 50px;
+            display: inline-block;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 14px;
+            padding: 0px 15px;
+            text-shadow: rgb(0 0 0 / 25%) 0px 3px 8px;
+            background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
+            transition: all 0.5s ease 0s;
+		}
+		.btn-area button:hover{
+            transition: all .1s ease;
+            box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+        }
+		.notice {
+			margin-left: 80px;
+			text-align: center;
+			font-size: 35px;
+            font-weight: 600;
+            line-height:65px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-size: 400%;
+            animation: move 5s ease infinite;
+            background-image: linear-gradient( 68.7deg,  rgba(29,173,235,1) 13.2%, rgba(137,149,250,1) 29.8%, rgba(229,109,212,1) 48.9%, rgba(255,68,128,1) 68.2%, rgba(255,94,0,1) 86.4% );
+        }
+
+        @keyframes move {
+            0%,100%{
+                background-position: 200% 0%;
+            }
+            50%{
+                background-position: 0% 200%;
+            }
+        }
+		.notice_1{
+			margin-left: 100px;
+			text-align: center;
+			font-size: 35px;
+		}
+		.hh {
+			font-style: oblique;
+			font-size: 60px;
+			text-align: center;
+			color: white;
+			margin-bottom: 50px;
+			margin-left: 50px;
+			animation: flicker 1.5s infinite alternate;
+		}
+		@keyframes flicker {
+		  0%,
+		  18%,
+		  22%,
+		  25%,
+		  53%,
+		  57%,
+		  100% {
+		    text-shadow: 0 0 4px #FA3ED7, 0 0 11px #FA3ED7, 0 0 19px #FA3ED7, 0 0 40px #FA3ED7,
+		      0 0 80px #FA3ED7, 0 0 90px #FA78E2, 0 0 100px #FA78E2, 0 0 150px #FA78E2;
+		  }
+		  20%,
+		  24%,
+		  55% {
+		    text-shadow: none;
+		  }
+		}
+		.btn {margin-top: 30px;}
+		.btn button {
+			width: 100%; height: 50px;
+            display: inline-block;
+            outline: 0;
+            border: none;
+            box-shadow: none;
+            cursor: pointer;
+            padding: 9px 22px;
+            font-size: 22px;
+            font-weight: 400;
+            color: #fff;
+            text-align: center;
+            line-height: normal;
+            background: linear-gradient(90deg,#5522fa 0,#0074e4 100%);
+            border-radius: 50px;
+            transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
+		}
+		.btn button:hover{
+            box-shadow: 0 0 0 0.15rem #5ceace;
+        }
+
+		.chk_btn {
+			margin-top: 10px;
+			width: 50%; height: 30;
+			background: #E6E6FA;
+			color: #778899;
+			font-size: 18px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+
+		.caption {
+			margin-top: 20px;
+			text-align: center;
+		}
+		.caption a {
+			font-size: 15px; color: #222;
+			text-decoration: none;
+		}
+
+		.hhh {
+			font-style: oblique;
+			font-size: 60px;
+			text-align: center;
+			color: white;
+			margin-bottom: 50px;
+			animation: flick 1.5s infinite alternate;
+
+		}
+		@keyframes flick {
+		  0%,
+		  18%,
+		  22%,
+		  25%,
+		  53%,
+		  57%,
+		  100% {
+		    text-shadow: 0 0 4px #A6F802, 0 0 11px #A6F802, 0 0 19px #A6F802, 0 0 40px #A6F802,
+		      0 0 80px #A6F802, 0 0 90px #ECF901, 0 0 100px #ECF901, 0 0 150px #ECF901;
+		  }
+		  20%,
+		  24%,
+		  55% {
+		    text-shadow: none;
+		  }
+		}
+
+		.area {margin-top: 30px;}
+		.area button {
+			width: 100%; height: 50px;
+            display: inline-block;
+            outline: 0;
+            border:0;
+            cursor: pointer;
+            text-decoration: none;
+            position: relative;
+            color: #000;
+            background: #fff;
+            line-height: 30px;
+            border-radius: 40px;
+            font-size: 20px;
+            font-weight: 600;
+            box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+            ransition: all 0.2s;
+		}
+		.area button:hover{
+            box-shadow: #0de589 -2px -2px 0px 2px, #3c4fe0 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+            transform: scale(1.01);
+        }
+		.chkbtn {
+			margin-top: 10px;
+			margin-left: 10px;
+			width: 50%; height: 20;
+            display: inline-block;
+            outline: none;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 3px;
+            padding: 8px 15px;
+            border: 0;
+            color: black;
+            background: #b6b7d5;
+            line-height: 1.15;
+            font-size: 16px;
+		}
+		.chkbtn:hover {
+            transition: all .1s ease;
+            box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+         }
+		.hhhh {
+			font-style: oblique;
+			font-weight: bold;
+			font-size: 50px;
+			text-align: center;
+			color: white;
+			margin-bottom: 30px;
+			animation: fli 1.5s infinite alternate;
+		}
+		@keyframes fli {
+		  0%,
+		  18%,
+		  22%,
+		  25%,
+		  53%,
+		  57%,
+		  100% {
+		    text-shadow: 0 0 4px #0254F7, 0 0 11px #0254F7, 0 0 19px #0254F7, 0 0 40px #0254F7,
+		      0 0 80px #0254F7, 0 0 90px #B3CAFB, 0 0 100px #B3CAFB, 0 0 150px #B3CAFB;
+		  }
+		  20%,
+		  24%,
+		  55% {
+		    text-shadow: none;
+		  }
+		}
